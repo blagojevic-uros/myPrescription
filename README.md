@@ -9,7 +9,7 @@ MyPrescription predstavlja web aplikaciju za naručivanje lekova koja je zasnova
 * Pacijent ( registrovani korisnik )
   * Nakon što se prijavio ( prethodi uspešna registracija ), omogućena mu je pretraga i pregled svakog leka pojedinačno. Neke od lekova nije moguće dobiti bez preskripcije, pa samim tim pacijent ima mogućnost uploadovanja recepta. Ukoliko je farmaceut odobrio recept, korisnik ima mogućnost naručivanja leka u količinama koje su mu odobrene. Nakon 24h ( simulacija dostave leka do apoteke ), pacijentu je omogućeno preuzimanje leka. Tek nakon završavanja ovog koraka, on može ostaviti komentar i oceniti lek. Proces naručivanja lekova koji ne zahtevaju recept je identičan, osim što izuzima korak uplodavoanja recepta.
 * Farmaceut
-  * Farmaceut ima CRUD privilegije nad entitetima u sistemu. Nema mogućnost ocenjivanja lekova. Pri pregledu preskripcije ( slika koju šalju pacijentu ), ima mogućnost da istu odbije ili odobri. Ukoliko se preskripcija odbije, navodi se razlog odbijanja koji korisnik nakon toga može da vidi. Ukoliko se prihvati, zadaje se datum važenja kao i količina lekova koje je moguće kupiti koristeći istu.
+  * Farmaceut ima CRUD privilegije nad entitetima u sistemu. Nema mogućnost ocenjivanja lekova. Pri pregledu preskripcije ( slika koju šalje pacijent ), ima mogućnost da istu odbije ili odobri. Ukoliko se preskripcija odbije, navodi se razlog odbijanja koji korisnik nakon toga može da vidi. Ukoliko se prihvati, zadaje se datum važenja kao i količina lekova koje je moguće kupiti koristeći istu.
 
 # Arhitektura sistema
 
