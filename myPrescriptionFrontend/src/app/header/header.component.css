@@ -1,0 +1,68 @@
+.header-top {
+    width: 60%;
+    height: 19.5vh;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.6%;
+    display: flex;
+}
+
+.header-top h1 {
+    color: #083D64;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3.4em;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.logo-img {
+    width: 17%;
+    height: auto;
+    margin-left: 7%;
+}
+
+.header-bottom {
+    width: 60%;
+    height: 6vh;
+    background-color: #7DCE08;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper button {
+    width: 33%;
+    border: 0;
+    background-color: #7DCE08;
+    color: white;
+    font-size: 1.1em;
+    font-family: 'Varela Round', sans-serif;
+    height: 100%;
+    -webkit-transition: .5s all;
+    -webkit-transition-delay: 5s;
+    -moz-transition: .5s all;
+    -moz-transition-delay: 5s;
+    -ms-transition: .5s all;
+    -ms-transition-delay: 5s;
+    -o-transition: .5s all;
+    -o-transition-delay: 5s;
+    transition: .5s all;
+    transition-delay: 0s;
+}
+
+.wrapper button:hover {
+    background-color: rgba(255, 255, 255, 0.903);
+    color: #7DCE08;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
