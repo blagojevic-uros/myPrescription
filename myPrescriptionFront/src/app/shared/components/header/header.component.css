@@ -37,6 +37,15 @@
     margin-right: auto;
 }
 
+.wrapper button * {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper button *:hover {
+    color: #7DCE08;
+}
+
 .wrapper button {
     width: 33%;
     border: 0;
