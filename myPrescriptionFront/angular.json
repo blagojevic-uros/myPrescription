@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myPrescriptionFrontend": {
+    "myPrescriptionFront": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-prescription-frontend",
+            "outputPath": "dist/my-prescription-front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "myPrescriptionFrontend:build:production"
+              "browserTarget": "myPrescriptionFront:build:production"
             },
             "development": {
-              "browserTarget": "myPrescriptionFrontend:build:development"
+              "browserTarget": "myPrescriptionFront:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myPrescriptionFrontend:build"
+            "browserTarget": "myPrescriptionFront:build"
           }
         },
         "test": {
