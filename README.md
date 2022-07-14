@@ -11,7 +11,7 @@ MyPrescription predstavlja web aplikaciju za naručivanje lekova koja je zasnova
 * Farmaceut
   * Farmaceut ima CRUD privilegije nad entitetima u sistemu. Nema mogućnost ocenjivanja lekova. Pri pregledu preskripcije ( slika koju šalje pacijent ), ima mogućnost da istu odbije ili odobri. Ukoliko se preskripcija odbije, navodi se razlog odbijanja koji korisnik nakon toga može da vidi. Ukoliko se prihvati, zadaje se datum važenja kao i količina lekova koje je moguće kupiti koristeći istu.
 * Administrator
- * Administrator ima CRUD privilegije nad Farmaceutima kao i ostalih entiteta u sistemu. Takođe, ukoliko Ulogovani korisnik ili Farmaceut prijave određeni komentar, Administrator ima mogućnost banovanja korisnika na određeni period.
+  * Administrator ima CRUD privilegije nad Farmaceutima kao i ostalih entiteta u sistemu. Takođe, ukoliko Ulogovani korisnik ili Farmaceut prijave određeni komentar, Administrator ima mogućnost banovanja korisnika na određeni period.
 
 # Arhitektura sistema
 
