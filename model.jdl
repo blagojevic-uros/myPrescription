@@ -1,0 +1,84 @@
+entity Pharmacy{
+	name String,
+    address String,
+}
+
+entity Company{
+	name String
+}
+
+entity Drug{
+	name String,
+    dateProduced Instant,
+    dose Integer,
+    prescriptionRequired Boolean
+}
+
+entity Stock{
+	quantity Integer
+}
+
+entity User{
+	firstName String,
+    lastName String,
+    username String,
+    password String,
+    phoneNumber String,
+    dateDeleted Boolean,
+    activationCode String,
+    dateActivated Instant
+}
+
+entity Pharmacist{
+	grossWage Double,
+    netWage Double,
+}
+
+entity Admin{
+
+}
+
+entity Patient{
+
+}
+
+entity Prescription{
+	datePrescribed Instant,
+    image String //byte64[]
+}
+
+entity Comment{
+	content String,
+    dateCommented Instant,
+    dateApproved Boolean,
+    dateDeleted Instant,
+}
+
+entity DrugPrescription{
+	quantity Integer,
+    dateUsed Instant
+}
+
+entity Order{
+	dateOrdered Instant,
+    dateArrived Instant,
+    
+}
+
+relationship OneToOne{
+	User to Pharmacist,
+    User to Patient,
+    Pharmacy to Stock,
+    DrugPrescription to Drug,
+}
+
+relationship OneToMany{
+    Pharmacy to Pharmacist,
+    Company to Drug,
+    Stock to Drug,
+    Prescription to DrugPrescription,
+    Patient to Comment,
+    Patient to Prescription,
+    Patient to Order,
+    Comment to Drug
+}
